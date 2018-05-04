@@ -17,17 +17,14 @@ public class StudentService {
 
         students = new HashMap<Integer, Student>(){
             {
-                put(1,new Student((long) 1,"Michael"));
-                put(2,new Student((long)2,"Jim"));
-                put(3,new Student((long)3,"John"));
-                put(4,new Student((long)4,"Kim"));
-                put(5,new Student((long)5,"Mary"));
-                put(6,new Student((long)6,"Larry"));
-                put(7,new Student((long)7,"Bar"));
-                put(8,new Student((long)8,"Bar"));
-
-
-
+                put(1,new Student((long) 1,"Michael","micky","password"));
+                put(2,new Student((long)2,"Jim","lo","pass"));
+                put(3,new Student((long)3,"John","lo","pass"));
+                put(4,new Student((long)4,"Kim","lo","pass"));
+                put(5,new Student((long)5,"Mary","lo","pass"));
+                put(6,new Student((long)6,"Larry","lo","pass"));
+                put(7,new Student((long)7,"Bar","lo","pass"));
+                put(8,new Student((long)8,"Bar","lo","pass"));
             }
         };
     }
