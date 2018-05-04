@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+          integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+</head>
+<body>
+<div class="container">
+    <p>Register</p>
+    <form action="#" th:action="@{/student}" th:object="${student}" method="post">
+        <div class="form-group">
+            <!--<label for="exampleInputEmail1">ID: </label>-->
+            <input th:field="*{id}" type="number" class="form-control" id="inputID" aria-describedby="emailHelp"
+                   placeholder="Enter id">
+        </div>
+        <div class="form-group">
+            <input th:field="*{name}" type="text" class="form-control" id="inputName" aria-describedby="emailHelp"
+                   placeholder="Enter name">
+        </div>
+
+        <div class="form-group">
+            <input th:field="*{username}" type="text" class="form-control" id="inputUsername" aria-describedby="emailHelp"
+                   placeholder="Enter username">
+        </div>
+
+        <div class="form-group">
+            <input th:field="*{password}" type="password" class="form-control" id="inputPassword" aria-describedby="emailHelp"
+                   placeholder="Enter password">
+        </div>
+
+        <!--<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>-->
+        <!--<div class="form-group">-->
+        <!--<label for="exampleInputPassword1">Name</label>-->
+        <!--<input type="text" th:field="*{name}" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+        <!--</div>-->
+        <!--<div class="form-group form-check">-->
+        <!--<input type="checkbox" class="form-check-input" id="exampleCheck1">-->
+        <!--<label class="form-check-label" for="exampleCheck1">Check me out</label>-->
+        <!--</div>-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+</html>
