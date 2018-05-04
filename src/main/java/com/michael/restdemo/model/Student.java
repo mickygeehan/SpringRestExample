@@ -2,30 +2,26 @@ package com.michael.restdemo.model;
 
 public class Student {
 
-    private int ID,age;
+    private Long id;
     private String name;
 
-    public Student(int ID, int age, String name) {
-        this.ID = ID;
-        this.age = age;
+    public Student(){
+
+    }
+
+    public Student(Long id, String name) {
+        this.id = id;
         this.name = name;
     }
 
-    public int getID() {
-        return ID;
+    public Long getId() {
+        return id;
     }
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
     public String getName() {
         return name;

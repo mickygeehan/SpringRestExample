@@ -17,14 +17,14 @@ public class StudentService {
 
         students = new HashMap<Integer, Student>(){
             {
-                put(1,new Student(1,18,"Michael"));
-                put(2,new Student(2,23,"Jim"));
-                put(3,new Student(3,23,"John"));
-                put(4,new Student(4,23,"Kim"));
-                put(5,new Student(5,23,"Mary"));
-                put(6,new Student(6,23,"Larry"));
-                put(7,new Student(7,23,"Bar"));
-                put(8,new Student(8,23,"Bar"));
+                put(1,new Student((long) 1,"Michael"));
+                put(2,new Student((long)2,"Jim"));
+                put(3,new Student((long)3,"John"));
+                put(4,new Student((long)4,"Kim"));
+                put(5,new Student((long)5,"Mary"));
+                put(6,new Student((long)6,"Larry"));
+                put(7,new Student((long)7,"Bar"));
+                put(8,new Student((long)8,"Bar"));
 
 
 
@@ -38,6 +38,10 @@ public class StudentService {
 
     public Student getStudent(int id){
         return this.students.get(id);
+    }
+
+    public void addStudent(Student student){
+        this.students.put((int)(long)student.getId(),student);
     }
 
 

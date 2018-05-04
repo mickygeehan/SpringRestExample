@@ -6,9 +6,9 @@
 </head>
 <body>
 <h1>Result</h1>
-<!--/*@thymesVar id="greeting" type="com.michael.restdemo.model.Greeting"*/-->
-<p th:text="'Id: ' + ${greeting.id}"></p>
-<p th:text="'content: ' + ${greeting.content}" />
-<a href="/greeting">Submit another message</a>
+<p th:text="'id: ' + ${student.id}" />
+<p th:text="'content: ' + ${student.name}" />
+<a href="/greeting">Submit another message</a><br><hr>
+<a href="/students/all">Check your student was added</a>
 </body>
 </html>
