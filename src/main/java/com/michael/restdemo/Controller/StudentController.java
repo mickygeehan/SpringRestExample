@@ -27,8 +27,4 @@ public class StudentController {
         return this.stuService.getStudent(id);
     }
 
-
-
-
-
 }
